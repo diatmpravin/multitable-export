@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["diatm.pravin.it.07.27@gmail.com"]
   gem.description   = %q{Export data from multiple table}
   gem.summary       = %q{Export data from multiple table}
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/diatmpravin/multitable-export.git"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
