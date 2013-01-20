@@ -1,7 +1,7 @@
 require 'csv'
 
 namespace :db do
-  desc "pulls database table into a csv file"
+  desc "Export database table into a csv file"
   task :export_to_csv => :environment do
     model_dir = Dir['**/models/**/*.rb'].detect {|f| ENV['model'] == File.basename(f, '.*').camelize}
     if !model_dir.eql?(nil)    
