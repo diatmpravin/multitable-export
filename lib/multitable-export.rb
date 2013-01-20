@@ -2,6 +2,10 @@ require "multitable-export/version"
 
 module Multitable
   module Export
-    # Your code goes here...
+    class Railtie < ::Rails::Railtie
+	  rake_tasks do
+	    load "rake_export/export_import.rake"
+	  end
+    end
   end
 end
